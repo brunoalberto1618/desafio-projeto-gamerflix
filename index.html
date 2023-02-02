@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="/style/main.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         </style>
@@ -22,6 +22,11 @@
 </head>
 <body>
     <header>
+
+        <audio id="music" autoplay>
+            <source src="musics/the-witcher-3-menu-theme.mp3">
+        </audio>
+
         <div class="container">
             <h2 class="logo">GAMERFLIX</h2>
             <nav>
@@ -217,6 +222,14 @@
             PARA O INÍCIO
         </div>
     </a>    
+
+    <script>
+        window.addEventListener('click', function() {
+                const audio = document.getElementById('music');
+                audio.play();
+                audio.volume = 0.2;
+            })
+    </script>
 
     <script src="https://kit.fontawesome.com/024ef3a642.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
